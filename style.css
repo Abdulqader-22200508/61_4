@@ -1,6 +1,55 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-left {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    max-width: 100px;
+    margin: 10px auto;
+  }
+
+  .member-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .member-card {
+    width: 90%;
+  }
+
+  .faq-section,
+  .contact-form,
+  .join-form {
+    width: 90%;
+    margin: auto;
+  }
+
+  h1, h2, h3, p, a {
+    font-size: 1rem;
+  }
+}
+
+
+
+
 /* Global styles */
 body {
   font-family: 'Quicksand', sans-serif;
@@ -14,14 +63,15 @@ body {
 /* Navbar */
 /* Navbar */
 .navbar {
-  background: transparent;
-  padding: 0;
-  box-shadow: none;
-  position: sticky; /* Make the navbar sticky */
-  top: 0; /* Stick it to the top */
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 .nav-container {
