@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us | Group Portfolio</title>
+  <style>
+    #group-template form {
+      max-width: 600px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #group-template input, #group-template textarea {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    #group-template button {
+      padding: 10px;
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #group-template button:hover {
+      background-color: #2575fc;
+    }
+  </style>
+</head>
+<body>
+  <div id="group-template">
+    <header class="navbar">
+      <div class="container nav-container">
+        <div class="nav-left"><a href="join.html">Join Us</a></div>
+        <div class="logo"><img src="logo.png" alt="Group Logo" class="logo-img"></div>
+        <div class="nav-right">
+          <a href="index.html">Home</a>
+          <a href="members.html">Members</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Contact Us</h1>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <section id="contact-us">
+  <h2>Contact Us</h2>
+  <p>If you have any questions, suggestions, or just want to say hi :) feel free to reach out!</p>
+
+  <div class="contact-icons">
+    <a href="https://instagram.com/yourusername" target="_blank">
+      <img src="insta.png" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank">
+      <img src="x.png" alt="Twitter">
+    </a>
+    <a href="https://discord.com/users/yourid" target="_blank">
+      <img src="discord.png" alt="Discord">
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+                <p>&copy; 2025 Our Team | Designed for Interactive Multimedia project</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

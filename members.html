@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Members | Group Portfolio</title>
+  <style>
+    .member-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .member-row {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .member-card {
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .member-card h3 {
+      margin: 0.5rem 0;
+      color: #6a11cb;
+    }
+
+    .member-card p {
+      margin: 0;
+      color: #6a11cb;
+    }
+
+    .member-card a {
+      text-decoration: none;
+      color: #6a11cb;
+    }
+
+    .member-card a:hover {
+      color: #6a11cb;
+    }
+  </style>
+</head>
+<body>
+  <div id="group-template">
+    <header class="navbar">
+      <div class="container nav-container">
+        <div class="nav-left"><a href="join.html">Join Us</a></div>
+        <div class="logo">
+          <img src="logo.png" alt="Group Logo" class="logo-img">
+        </div>
+        <div class="nav-right">
+          <a href="index.html">Home</a>
+          <a href="members.html">Members</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 style="text-align:center;">Meet Our Team</h1>
+      
+      <div class="member-cards">
+        <!-- First row: 3 members -->
+        <div class="member-row">
+        <div class="member-card">
+  <a href="rashid.html"><img src="rashid.png" alt="Rashid">
+  <h3>Rashid</a></h3>
+</div>
+
+<div class="member-card">
+  <a href="abdulqader.html"><img src="abdulqader.jpeg" alt="Abdulqader">
+  <h3>Abdulqader</a></h3>
+</div>
+
+<div class="member-card">
+  <a href="salim.html"><img src="salim.jpeg" alt="Salim">
+  <h3>Salim</a></h3>
+</div>
+
+<div class="member-card">
+  <a href="emad.html"><img src="emad.jpeg" alt="Emad">
+  <h3>Emad</a></h3>
+</div>
+
+<div class="member-card">
+  <a href="edric.html"><img src="edric.jpeg" alt="Edric">
+  <h3>Edric</a></h3>
+</div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Our Team | Designed for Interactive Multimedia project</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

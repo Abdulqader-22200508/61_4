@@ -1,0 +1,261 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #fff;
+  background: url("bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick it to the top */
+  z-index: 2;
+  width: 100%;
+}
+
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  margin-left: 320px;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav-left a,
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-right {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-left a::after,
+.nav-right a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-left a:hover::after,
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #ffdd57;
+}
+
+/* Main Section */
+main {
+  min-height: 70vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Members Section */
+.member-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.member-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.member-card p {
+  font-size: 0.95em;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+}
+.footer p {
+  margin: 10px 0 0;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+.footer-icons {
+  margin-top: 15px;
+}
+
+.footer-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  color: #ffdd57;
+}
+
+/* Responsive: Keep 3 cards per row until it's too narrow */
+@media (max-width: 900px) {
+  .member-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .member-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+#join-us {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+#join-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#join-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#join-us label {
+  font-size: 1em;
+  text-align: left;
+}
+
+#join-us input[type="text"],
+#join-us input[type="email"],
+#join-us input[type="tel"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+#join-us input[type="checkbox"],
+#join-us input[type="radio"] {
+  margin-right: 10px;
+}
+
+#join-us button {
+  padding: 12px;
+  background: #6a11cb;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#join-us button:hover {
+  background: #2575fc;
+}
+
+#contact-us {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+  color: white;
+}
+
+#contact-us h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#contact-us p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-icons img {
+  width: 70px;
+  height: 70px;
+}
+.contact-icons a:hover img {
+  transform: scale(1.05);
+
+}

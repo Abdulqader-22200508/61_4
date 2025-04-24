@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="group-template">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="join.html">Join Us</a>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="nav-right">
+          <a href="index.html">Home</a>
+          <a href="members.html">Members</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Join Us Section -->
+    <main>
+      <section id="join-us">
+        <h2>Join Our Team</h2>
+        <form>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+971501234567" required>
+
+          <label>Preferred Contact Method:</label>
+          <label><input type="radio" name="contact" value="email" checked> Email</label>
+          <label><input type="radio" name="contact" value="phone"> Phone</label>
+
+          <label>What are you interested in?</label>
+          <label><input type="checkbox" name="interest" value="design"> Design</label>
+          <label><input type="checkbox" name="interest" value="development"> Development</label>
+          <label><input type="checkbox" name="interest" value="teamwork"> Teamwork</label>
+
+          <label><input type="checkbox" required> I agree to the terms and conditions</label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+          <p>&copy; 2025 Our Team | Designed for Interactive Multimedia project</p>
+    </footer>
+  </div>
+</body>
+</html>
